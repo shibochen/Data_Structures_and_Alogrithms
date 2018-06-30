@@ -16,12 +16,14 @@ HashMap provides 4 constructors and access modifier of each is public:
 4. **HashMap(Map map)**
 
 ##  Common Methods in HashMap
-1. **put( )**
-2. **get( )**
-3. **getOrDefault( )**
-4. **keySet( )**  return an array of key
-5. **isEmpty( )**
-6. **size( )**
+- **put( )**
+- **get( )**
+- **containsKey( )**
+- **containsValue( )**
+- **getOrDefault( )**
+- **keySet( )**  return an array of key
+- **isEmpty( )**
+- **size( )**
 
 ## Reference
 - [HashMap in GeeksforGeeks](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)
