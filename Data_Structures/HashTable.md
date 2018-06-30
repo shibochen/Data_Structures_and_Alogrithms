@@ -1,9 +1,8 @@
-# Hash Family
-
-## Hashmap
-
+# HashMap
 HashMap is a part of collection that provides the baisc implementation of Map interface. It stores teh data in (Key, Value)
 pairs.
+
+**key points about HashMap**
 - no duplicate keys, but can have duplicate values
 - key can be `null`
 - unsynchronized
@@ -16,7 +15,7 @@ HashMap provides 4 constructors and access modifier of each is public:
 3. **HashMap(int initial capacity, float loadFactor)**
 4. **HashMap(Map map)**
 
-## Common Methods
+##  Common Methods in HashMap
 1. **put( )**
 2. **get( )**
 3. **getOrDefault( )**
