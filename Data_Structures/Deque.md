@@ -7,6 +7,7 @@ Deque is an interface and has two implementations:
 2. ArrayDeque
 
 `Deque dq = new LinkedList()`;
+
 `Deque dq = new ArrayDeque()`;
 
 ## ArrayList vs ArrayDeque
@@ -17,6 +18,7 @@ on the tail (at the end) then you should choose ArrayList
 
 
 ## Method
+![deque](https://user-images.githubusercontent.com/38870192/42431087-4ae34e28-8311-11e8-878f-3fda3d147be5.PNG)
 
 
 ## Reference
