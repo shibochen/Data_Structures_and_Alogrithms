@@ -1,6 +1,6 @@
 # Important Notes about Queue
 
-`Queue` is a linear data structure in which the insertion and deletion operations are performed on First-in-First-out(FIFO) principle. <br />
+`Queue` is a linear data structure in which the insertion and deletion operations are performed on **First-in-First-out(FIFO)** principle. 
 
 `Queue<Integer> queue = new Queue<Integer>();` <br />
 `java.util.Queue` is an interface so you cannot instantiate it directly. You can instantiate class.
@@ -30,4 +30,5 @@ Queue interface in Java collections has two implementations:
 
 
 ## Reference
-1. [Queue Interface In Java](https://www.geeksforgeeks.org/queue-interface-java/)
+- [Data Strcuture and Algorithm in Java Page 240] (x)
+- [Queue Interface In Java](https://www.geeksforgeeks.org/queue-interface-java/)
