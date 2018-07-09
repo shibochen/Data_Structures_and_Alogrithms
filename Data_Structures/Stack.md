@@ -7,3 +7,6 @@ Stack data structure can be implement in two ways. They are as follows...
 2. Using Linked List
 
 When stack is implemented using array, that stack can organize only limited number of elements. When stack is implemented using linked list, that stack can organize unlimited number of elements.
+
+
+## Methods
