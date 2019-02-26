@@ -1,7 +1,7 @@
 # Binary Search (二分法)
 
 `二分法查找`：给定数组是有序的，给定一个key值。每次查找最中间的值，如果相等，就返回对应下标，如果key大于最中间的值，则在数组的右半边继续查找，
-如果小于，则在数组左半边查找，。最终有两种结果，一种是找到并返回下标，第二种是没找到。
+如果小于，则在数组左半边查找。最终有两种结果，一种是找到并返回下标，第二种是没找到。
 
 1. 判断条件
     - 有序排列
@@ -14,9 +14,27 @@
 
 ## Implemenation
 
+递归：
+
 ```java
-//value: right < target < left
-//terminal condition: right + 1 = left
+public static int binarySearch(int[] nums, int low, int high, int target) {
+    if (high <= low) {
+        return -1;
+    }
+    int mid = low + (high - low) / 2;
+    if (nums[mid] > target) {
+        return binarySearch(nums, low, mid + 1, target);
+    } else if (nums[mid] < target) {
+        return binarySearch(nums, mid + 1, high, target);
+    } else {
+        return mid;
+    }
+}
+```
+
+迭代：
+
+```java
 public static int binarySearch(int[] nums, int target) {
     int left = 0;
     int right = nums.length - 1; //[left, right]
@@ -30,17 +48,16 @@ public static int binarySearch(int[] nums, int target) {
         } else {
             return mid;
         }
-        System.out.println("mid: " + nums[mid] + "left: " + nums[left] + "right: " + nums[right]);
     }
-    System.out.println("left :" + left + "right :" + right);
     return -1;
 }
-
+/*以上方法终止条件：right + 1 = left
+ *三个值的大小分别为：right < target < left
+ *当心越界问题
+*/
 ```
 
 ```java
-//value: target < left
-//terminal condition: left = right
 public static int binarySearch(int[] nums, int target) {
     int left = 0;
     int right = nums.length; //[left, right)
@@ -54,18 +71,15 @@ public static int binarySearch(int[] nums, int target) {
         } else {
             return mid;
         }
-        System.out.println("mid: " + nums[mid] + "left: " + nums[left]);
     }
-    System.out.println("left :" + left + "right :" + right);
     return -1;
 }
-
+/*以上方法终止条件：left = right
+ *三个值的大小分别为: target < left || right
+*/
 ```
 
 ```java
-//two numbers are adjacent, the `while` loop will not execute
-//value: left < target < right
-//terminal condition: left + 1 = right
 public static int binarySearch(int[] nums, int target) {
     int left = 0;
     int right = nums.length - 1; //[left, right]
@@ -88,4 +102,8 @@ public static int binarySearch(int[] nums, int target) {
         return -1;
     }
 }
+/*终止条件： left + 1 = right
+ *当left和right仅靠时，while loop 不会执行
+ *当个值大小: left < target < right
+*/
 ```
