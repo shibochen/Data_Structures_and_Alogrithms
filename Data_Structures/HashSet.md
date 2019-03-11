@@ -19,6 +19,3 @@ The key points about Hashset:
 - **contains( )**
 - **isEmpty( )**
 - **size( )**
-
-## Reference
-- [HashSet in Java](https://www.geeksforgeeks.org/hashset-in-java/)
