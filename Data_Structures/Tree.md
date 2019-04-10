@@ -1,11 +1,18 @@
-# Binary Tree
+# Tree
 
-## Tree Terminology
+A tree is a collection of elements called nodes.
+
+Binary Tree
+
+- A **binary tree** is a special type of tree data structure in which every node can have a maximum of 2 children.
+
+Tree Terminology
+
 - **Internal Nodes** : The node which has at least one child
-- **Degree** 
+- **Degree**
   - **Degree of the Node** : The total number of children of a node
   - **Degree of the Tree** : The highest degree of a node among all the nodes
-- **Height** 
+- **Height**
   - **Height of the Node** : The total number of edges from leaf node to a particular node in the largest path
   - **Height of the Tree** : The height of the root node
 - **Depth**
@@ -14,8 +21,8 @@
 - **Path** : The sequence of nodes and edges between two nodes
 - **Length of a Path** : Thet total number of nodes in that path
   
+## Binary Tree Traversal
 
-## Binary Tree Traversal 
 - Breadth First Traversal (BFS)
 - Depth First Traversals (DFS)
   - Preorder Traversal (Root-Left-Right)
@@ -28,7 +35,7 @@
   - recursion
   - iteration (using Stack)
   
-  
- ## Reference
- - [Tree Traversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
- - [树的遍历](https://www.cnblogs.com/harrygogo/p/4599097.html)
+Reference
+
+- [Tree Traversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+- [树的遍历](https://www.cnblogs.com/harrygogo/p/4599097.html)
