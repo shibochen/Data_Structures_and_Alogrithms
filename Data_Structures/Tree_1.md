@@ -44,6 +44,8 @@ A `tree` is a non-linear data structure which organizes data in hierarchical str
 
 ## Binary Tree Traversal
 
+`Binary Tree Traversal`: diplaying or visiting order of nodes in a binary tree
+
 - Breadth First Traversal (BFS)
 - Depth First Traversals (DFS)
   - Preorder Traversal (Root-Left-Right)
@@ -59,8 +61,3 @@ A `tree` is a non-linear data structure which organizes data in hierarchical str
 ## Binary Search Tree
 
 - A **Binary Search Tree** is a binary tree in which every node contains only smaller values in its left substree and only larger values in its right subtree
-
-Reference
-
-- [Tree Traversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
-- [树的遍历](https://www.cnblogs.com/harrygogo/p/4599097.html)

@@ -1,24 +1,40 @@
 # Queue
 
-`Queue` is a linear data structure in which the insertion and deletion operations are performed on **First-in-First-out(FIFO)** principle. 
+`Queue` is a linear data structure in which the operations are performed on **First-in-First-out(FIFO)** principle.
 
-`Queue<Integer> queue = new Queue<Integer>();` <br />
-`java.util.Queue` is an interface so you cannot instantiate it directly. You can instantiate class.
+```java
+Queue<Integer> queue = new Queue<Integer>();
+```
 
-Queue interface in Java collections has two implementations:
+**Note**: `java.util.Queue` is an interface so you cannot instantiate it directly. You can instantiate class.
+
+## Implementations
+
 1. LinkedList
 2. PriorityQueue
 
-`Queue q1 = new LinkedList();` <br />
-`Queue q2 = new PriorityQueue();` <br />
+```java
+Queue q1 = new LinkedList();
+Queue q2 = new PriorityQueue();
+```
 
+## Basic Methods
 
-## Queue Method Table
-![capture2](https://user-images.githubusercontent.com/38870192/42430805-80b9766e-830f-11e8-85a7-73d4d6341d3d.PNG)
+- **offer**
+- **poll**
+- **peek**
+- **isEmpty**
+- **size**
 
-![queuemethods](https://user-images.githubusercontent.com/38870192/39684074-4f0fdb30-5187-11e8-893e-90f432abf62d.PNG)
+## Priority Queue
 
+Priority Queue is an extension of queue with following properties.
 
-## Reference
-- [Data Strcuture and Algorithm in Java Page 240](x)
-- [Queue Interface In Java](https://www.geeksforgeeks.org/queue-interface-java/)
+1. Every item has a priority associated with it
+2. An element with high priority is dequeued before an element with low priority
+3. If two elements have the same priority, they are served according to their order in the queue
+
+## Implementation
+
+1. Array
+2. Heap
